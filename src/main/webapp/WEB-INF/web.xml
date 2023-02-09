@@ -20,8 +20,8 @@
        <servlet-name>initParamJsp</servlet-name>
        <jsp-file>/initparamjsp.jsp</jsp-file>
        <init-param>
-           <param-name>DefaultUser</param-name>
-           <param-value>Default UserName</param-value>
+           <param-name>defaultUser</param-name>
+           <param-value>Default User</param-value>
        
        </init-param>
   </servlet>
@@ -35,7 +35,7 @@
        <servlet-name>firstjsp</servlet-name>
        <jsp-file>/first.jsp</jsp-file>
        <init-param>
-           <param-name>DefaultUser</param-name>
+           <param-name>defaultUser</param-name>
            <param-value>Default UserName</param-value>
        
        </init-param>

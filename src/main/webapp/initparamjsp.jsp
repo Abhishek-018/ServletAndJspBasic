@@ -9,14 +9,15 @@
 <body>
 
 <%!
-public void jspint(){
-	String user =  getServletConfig().getInitParameter("DefaultUser");
+
+public void jspInit() {
+	String defaultUser =  getServletConfig().getInitParameter("defaultUser");
 	ServletContext application = getServletContext();
-	application.setAttribute("savedConextUserName",user);
+	application.setAttribute("defaultUser",defaultUser);
 }
 
 %>
- Default Username from web.xml initparam jsp config is:  <%= getServletConfig().getInitParameter("DefaultUser")%>
- Default Servlet Context is:  <%= application.getAttribute("savedConextUserName")%>
+ Default Username from web.xml initparam jsp config is:  <%= getServletConfig().getInitParameter("defaultUser")%>
+ <br>Value of Servlet Context is:  <%= getServletContext().getAttribute("savedConextUserName")%>
  </body>
 </html>
