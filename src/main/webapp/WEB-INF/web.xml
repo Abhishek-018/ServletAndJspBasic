@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>MyServerSideProject</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>pagetwo.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+     <servlet-name>xmlServlet</servlet-name>
+     <servlet-class>com.servlet.learning.XmlServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+      <servlet-name>xmlServlet</servlet-name>
+      <url-pattern>/XmlServletPath</url-pattern>  
+  </servlet-mapping>
+  
+  <servlet>
+       <servlet-name>initParamJsp</servlet-name>
+       <jsp-file>/initparamjsp.jsp</jsp-file>
+       <init-param>
+           <param-name>DefaultUser</param-name>
+           <param-value>Default UserName</param-value>
+       
+       </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+       <servlet-name>initParamJsp</servlet-name>
+        <url-pattern>/initparamjsp.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+       <servlet-name>firstjsp</servlet-name>
+       <jsp-file>/first.jsp</jsp-file>
+       <init-param>
+           <param-name>DefaultUser</param-name>
+           <param-value>Default UserName</param-value>
+       
+       </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+       <servlet-name>firstjsp</servlet-name>
+        <url-pattern>/first.jsp</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>

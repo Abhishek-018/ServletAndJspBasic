@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User Detail</title>
+</head>
+<body>
+<form method="post" action="XmlServletPath">
+  <label for="firstName">Enter First Name:</label><br>
+  <input type="text"  name="firstName" /><br><br>
+  
+  <label for="lastName">Enter Last Name:</label><br>
+  <input type="text"  name="lastName" /><br><br>
+  
+  <label for="jerseyNumber">Enter Jersey number:</label><br>
+  <input type="text"  name="jerseyNumber" /><br><br>
+  
+  <label for="designation">Select Designation: </label>
+  <input type="radio" name="designation" value="Batsman">Batsman</input>
+  <input type="radio" name="designation" value="Bowler">Bowler</input><br><br>
+  
+  <label for="chores">Tick for completed chores: </label><br>
+  <input type="checkbox" name="chores" value="Health checkup">Health checkup</input><br>
+  <input type="checkbox" name="chores" value="Fitness Test">Fitness Test</input><br>
+  <input type="checkbox" name="chores" value="YOYO Test">YOYO Test</input><br><br>
+  
+  <label for ="Match location">Match Location: </label>
+  <select name="location">
+    <option value="India">India</option>
+    <option value="Australia">Australia</option>
+    <option value="New Zealand">New Zealand</option>
+  
+  </select><br><br>
+  <input type="Submit" />
+</form>
+</body>
+</html>
